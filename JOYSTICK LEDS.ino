@@ -138,18 +138,18 @@ void loop()
 
   //  Izquierda
   else if(joystickListo && angleX < 5){
-    //columna--;
-    //joystickListo = false;
+    columna--;
+    joystickListo = false;
   }
 
   //  Derecha
-  else if(joystickListo && angleX > 138){
+  else if(joystickListo && angleX > 175){
     columna++;
     joystickListo = false;
   }
   
   // Comprueba si el joystick está en el centro
-  if(angleX < 10 && angleY > 80 && angleY < 100)
+  if(angleX > 80 && angleX < 100 && angleY > 80 && angleY < 100)
     joystickListo = true;
   
   
